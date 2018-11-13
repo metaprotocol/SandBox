@@ -262,7 +262,7 @@ Interface.prototype.showNetwork = function (peers, room, nop2p, mustForward) {
   graph.add({
     id: 'Me',
     me: true,
-    name: lg('you')
+    name: lg('я')
   })
 
   var proxyID = nop2p ? 'Server' : 'Me'
@@ -271,7 +271,7 @@ Interface.prototype.showNetwork = function (peers, room, nop2p, mustForward) {
     graph.add({
       id: 'Server',
       me: false,
-      name: lg('server')
+      name: lg('сервер')
     })
     graph.connect('Server', 'Me')
   }
