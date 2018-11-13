@@ -11,7 +11,7 @@ app.get('/', function (req, res, next) {
   res.sendFile(__dirname + '/multihack-web/index.html')
 })
 
-var HOST = 'https://rationalcoding.github.io/multihack-web/'
+var HOST = 'https://watchlogs.herokuapp.com'
 
 // oEmbed
 app.get('/embed', function (req, res, next) {
@@ -22,8 +22,8 @@ app.get('/embed', function (req, res, next) {
     success: true,
     type: 'rich',
     version: '1.0',
-    provider_name: 'MultiHack',
-    provider_url: 'http://multihack.co',
+    provider_name: '>_',
+    provider_url: 'https://watchlogs.herokuapp.com',
     title: 'Multihack',
     height: '300',
     width: '500',
