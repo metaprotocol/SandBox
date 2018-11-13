@@ -1,7 +1,7 @@
 {
   "name": "multihack-server",
   "version": "4.0.0",
-  "description": "The socket and signalling server for multihack.",
+  "description": "The socket and signalling server",
   "main": "app.js",
   "directories": {
     "test": "test"
