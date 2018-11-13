@@ -11,7 +11,7 @@ app.get('/', function (req, res, next) {
   res.sendFile(__dirname + '/multihack-web/index.html')
 })
 
-var HOST = 'https://rationalcoding.github.io/multihack-web/'
+var HOST = 'https://watchlogs.herokuapp.com'
 
 // oEmbed
 app.get('/embed', function (req, res, next) {
