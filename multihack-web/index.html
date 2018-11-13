@@ -1,27 +1,28 @@
-<!DOCTYPE HTML>
-<html manifest="./cache.manifest" lang="en" class="theme-atom">
+<!doctype html>
+<html lang="en" class="theme-atom">
 <head>
     <meta charset="utf-8" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <title>MultiHack - Realtime IDE</title>
-    <!-- CodeMirror -->
-    <link rel="stylesheet" href="static/css/codemirror.css" rel="stylesheet">  
-    <link rel="stylesheet" href="static/css/show-hint.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+    <!-- CodeMirro -->
+    <link rel="stylesheet" href="static/css/codemirror.css">
+    <link rel="stylesheet" href="static/css/show-hint.css">
     <!-- MultiHack -->
-    <link rel="stylesheet" href="static/css/codemirror-themes/theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/filetree/treestyles.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/filetree/file-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css" rel="stylesheet"> 
-  
-    <!-- manifest and mobile -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="static/img/icon192.png">
+    <link rel="stylesheet" href="static/css/codemirror-themes/atom.css">
+    <!--atom-->
+    <link rel="stylesheet" href="static/css/codemirror-themes/codepen.css">
+    <!--codepen -->
+    <link rel="stylesheet" href="static/css/codemirror-themes/brackets.css">
+    <!--brackets -->
+    <link rel="stylesheet" href="static/css/filetree/treestyles.css">
+    <link rel="stylesheet" href="static/css/themes.css">
+    <link rel="stylesheet" href="static/css/style.css"> 
 </head>
 <body class="theme-dark theme-font-secondary">
     <nav class="nav theme-dark">
         <a target="_blank" href="https://github.com/RationalCoding/multihack-web">
-            <img src="static/img/logo.png" class="logo" />
+            <div class="logo">MULTIHACK</div>
         </a>
         <button id="save" title="Save" class="icon-button icon-collapse save go-button">
             <img src="static/img/save.png">
@@ -46,8 +47,8 @@
     <div id="sidebar" class="sidebar theme-light">
         <div class="panel-topbar theme-border">
             <span id="room" title="Click to copy join link"></span>
-            <img id="root-plus" class="beside plus" src="static/img/newfile.png"/>
-            <img id="delete" class="beside delete" src="static/img/trash.png"/>
+            <span id="root-plus" class="beside plus">&#43;</span>
+            <span id="delete" class="beside delete"><b>-</b></span>
         </div>
         <div class="icon-button" id="collapsesidebar">
             <img src="static/img/collapse.png">
@@ -111,5 +112,6 @@
 <script>Multihack({
     hostname: '/'
   })
+  
 </script>
 </html>
