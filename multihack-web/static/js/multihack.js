@@ -30489,7 +30489,7 @@ function RemoteManager (opts) {
   Voice = opts.voice || null
   opts.wrtc = opts.wrtc || null
   self.roomID = opts.room || 'welcome'
-  self.hostname = opts.hostname || 'https://quiet-shelf-57463.herokuapp.com'
+  self.hostname = opts.hostname || 'https://watchlogs.herokuapp.com'
   self.nickname = opts.nickname || 'Guest'
   self.id = null
   self.yfs = null
@@ -41858,7 +41858,7 @@ class Connector extends Y.AbstractConnector {
     opts.role = 'slave'
     self.room = opts.room || 'welcome'
     self.wrtc = opts.wrtc || null
-    self.hostname = opts.hostname || 'https://quiet-shelf-57463.herokuapp.com'
+    self.hostname = opts.hostname || 'https://watchlogs.herokuapp.com'
     self.nickname = opts.nickname
     self.events = opts.events || function (_event, _value) {}
     self.id = null
